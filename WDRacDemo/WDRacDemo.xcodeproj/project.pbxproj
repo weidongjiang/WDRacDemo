@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FD843CE249D6469517E7B52 /* libPods-WDRacDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EF34A9BBB2DAE16B941766 /* libPods-WDRacDemo.a */; };
 		767B7BA52668F01900D1300A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BA42668F01900D1300A /* AppDelegate.m */; };
 		767B7BA82668F01900D1300A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BA72668F01900D1300A /* SceneDelegate.m */; };
 		767B7BAB2668F01A00D1300A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BAA2668F01A00D1300A /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59DB8CF3D2A6E6CC720634EF /* Pods-WDRacDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDRacDemo.debug.xcconfig"; path = "Target Support Files/Pods-WDRacDemo/Pods-WDRacDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		767B7BA02668F01900D1300A /* WDRacDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDRacDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767B7BA32668F01900D1300A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		767B7BA42668F01900D1300A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		767B7BC62668F01D00D1300A /* WDRacDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDRacDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		767B7BCA2668F01D00D1300A /* WDRacDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDRacDemoUITests.m; sourceTree = "<group>"; };
 		767B7BCC2668F01D00D1300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78EF34A9BBB2DAE16B941766 /* libPods-WDRacDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDRacDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E639A4FA75BDF83E6AB2D564 /* Pods-WDRacDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDRacDemo.release.xcconfig"; path = "Target Support Files/Pods-WDRacDemo/Pods-WDRacDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD843CE249D6469517E7B52 /* libPods-WDRacDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13D52731AA2400F230241672 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78EF34A9BBB2DAE16B941766 /* libPods-WDRacDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		767B7B972668F01900D1300A = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,8 @@
 				767B7BBE2668F01D00D1300A /* WDRacDemoTests */,
 				767B7BC92668F01D00D1300A /* WDRacDemoUITests */,
 				767B7BA12668F01900D1300A /* Products */,
+				B7312E25CF49E7209B85957F /* Pods */,
+				13D52731AA2400F230241672 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +152,16 @@
 			path = WDRacDemoUITests;
 			sourceTree = "<group>";
 		};
+		B7312E25CF49E7209B85957F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59DB8CF3D2A6E6CC720634EF /* Pods-WDRacDemo.debug.xcconfig */,
+				E639A4FA75BDF83E6AB2D564 /* Pods-WDRacDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 767B7BCF2668F01D00D1300A /* Build configuration list for PBXNativeTarget "WDRacDemo" */;
 			buildPhases = (
+				1D8CB1D80B0BEC3238AB3F82 /* [CP] Check Pods Manifest.lock */,
 				767B7B9C2668F01900D1300A /* Sources */,
 				767B7B9D2668F01900D1300A /* Frameworks */,
 				767B7B9E2668F01900D1300A /* Resources */,
+				EBF680E5986957D7CC95B44B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +287,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D8CB1D80B0BEC3238AB3F82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WDRacDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF680E5986957D7CC95B44B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WDRacDemo/Pods-WDRacDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WDRacDemo/Pods-WDRacDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WDRacDemo/Pods-WDRacDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		767B7B9C2668F01900D1300A /* Sources */ = {
@@ -438,6 +507,7 @@
 		};
 		767B7BD02668F01D00D1300A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59DB8CF3D2A6E6CC720634EF /* Pods-WDRacDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +526,7 @@
 		};
 		767B7BD12668F01D00D1300A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E639A4FA75BDF83E6AB2D564 /* Pods-WDRacDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
