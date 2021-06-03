@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		767B7BA52668F01900D1300A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BA42668F01900D1300A /* AppDelegate.m */; };
+		767B7BA82668F01900D1300A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BA72668F01900D1300A /* SceneDelegate.m */; };
+		767B7BAB2668F01A00D1300A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BAA2668F01A00D1300A /* ViewController.m */; };
+		767B7BAE2668F01A00D1300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767B7BAC2668F01A00D1300A /* Main.storyboard */; };
+		767B7BB02668F01C00D1300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767B7BAF2668F01C00D1300A /* Assets.xcassets */; };
+		767B7BB32668F01C00D1300A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767B7BB12668F01C00D1300A /* LaunchScreen.storyboard */; };
+		767B7BB62668F01C00D1300A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BB52668F01C00D1300A /* main.m */; };
+		767B7BC02668F01D00D1300A /* WDRacDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BBF2668F01D00D1300A /* WDRacDemoTests.m */; };
+		767B7BCB2668F01D00D1300A /* WDRacDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B7BCA2668F01D00D1300A /* WDRacDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		767B7BBC2668F01D00D1300A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767B7B982668F01900D1300A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767B7B9F2668F01900D1300A;
+			remoteInfo = WDRacDemo;
+		};
+		767B7BC72668F01D00D1300A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767B7B982668F01900D1300A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767B7B9F2668F01900D1300A;
+			remoteInfo = WDRacDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		767B7BA02668F01900D1300A /* WDRacDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDRacDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		767B7BA32668F01900D1300A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		767B7BA42668F01900D1300A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		767B7BA62668F01900D1300A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		767B7BA72668F01900D1300A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		767B7BA92668F01A00D1300A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		767B7BAA2668F01A00D1300A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		767B7BAD2668F01A00D1300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		767B7BAF2668F01C00D1300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		767B7BB22668F01C00D1300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		767B7BB42668F01C00D1300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767B7BB52668F01C00D1300A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		767B7BBB2668F01D00D1300A /* WDRacDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDRacDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767B7BBF2668F01D00D1300A /* WDRacDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDRacDemoTests.m; sourceTree = "<group>"; };
+		767B7BC12668F01D00D1300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767B7BC62668F01D00D1300A /* WDRacDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDRacDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767B7BCA2668F01D00D1300A /* WDRacDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDRacDemoUITests.m; sourceTree = "<group>"; };
+		767B7BCC2668F01D00D1300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		767B7B9D2668F01900D1300A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767B7BB82668F01D00D1300A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767B7BC32668F01D00D1300A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		767B7B972668F01900D1300A = {
+			isa = PBXGroup;
+			children = (
+				767B7BA22668F01900D1300A /* WDRacDemo */,
+				767B7BBE2668F01D00D1300A /* WDRacDemoTests */,
+				767B7BC92668F01D00D1300A /* WDRacDemoUITests */,
+				767B7BA12668F01900D1300A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		767B7BA12668F01900D1300A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				767B7BA02668F01900D1300A /* WDRacDemo.app */,
+				767B7BBB2668F01D00D1300A /* WDRacDemoTests.xctest */,
+				767B7BC62668F01D00D1300A /* WDRacDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		767B7BA22668F01900D1300A /* WDRacDemo */ = {
+			isa = PBXGroup;
+			children = (
+				767B7BA32668F01900D1300A /* AppDelegate.h */,
+				767B7BA42668F01900D1300A /* AppDelegate.m */,
+				767B7BA62668F01900D1300A /* SceneDelegate.h */,
+				767B7BA72668F01900D1300A /* SceneDelegate.m */,
+				767B7BA92668F01A00D1300A /* ViewController.h */,
+				767B7BAA2668F01A00D1300A /* ViewController.m */,
+				767B7BAC2668F01A00D1300A /* Main.storyboard */,
+				767B7BAF2668F01C00D1300A /* Assets.xcassets */,
+				767B7BB12668F01C00D1300A /* LaunchScreen.storyboard */,
+				767B7BB42668F01C00D1300A /* Info.plist */,
+				767B7BB52668F01C00D1300A /* main.m */,
+			);
+			path = WDRacDemo;
+			sourceTree = "<group>";
+		};
+		767B7BBE2668F01D00D1300A /* WDRacDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				767B7BBF2668F01D00D1300A /* WDRacDemoTests.m */,
+				767B7BC12668F01D00D1300A /* Info.plist */,
+			);
+			path = WDRacDemoTests;
+			sourceTree = "<group>";
+		};
+		767B7BC92668F01D00D1300A /* WDRacDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				767B7BCA2668F01D00D1300A /* WDRacDemoUITests.m */,
+				767B7BCC2668F01D00D1300A /* Info.plist */,
+			);
+			path = WDRacDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		767B7B9F2668F01900D1300A /* WDRacDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767B7BCF2668F01D00D1300A /* Build configuration list for PBXNativeTarget "WDRacDemo" */;
+			buildPhases = (
+				767B7B9C2668F01900D1300A /* Sources */,
+				767B7B9D2668F01900D1300A /* Frameworks */,
+				767B7B9E2668F01900D1300A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WDRacDemo;
+			productName = WDRacDemo;
+			productReference = 767B7BA02668F01900D1300A /* WDRacDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		767B7BBA2668F01D00D1300A /* WDRacDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767B7BD22668F01D00D1300A /* Build configuration list for PBXNativeTarget "WDRacDemoTests" */;
+			buildPhases = (
+				767B7BB72668F01D00D1300A /* Sources */,
+				767B7BB82668F01D00D1300A /* Frameworks */,
+				767B7BB92668F01D00D1300A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767B7BBD2668F01D00D1300A /* PBXTargetDependency */,
+			);
+			name = WDRacDemoTests;
+			productName = WDRacDemoTests;
+			productReference = 767B7BBB2668F01D00D1300A /* WDRacDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		767B7BC52668F01D00D1300A /* WDRacDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767B7BD52668F01D00D1300A /* Build configuration list for PBXNativeTarget "WDRacDemoUITests" */;
+			buildPhases = (
+				767B7BC22668F01D00D1300A /* Sources */,
+				767B7BC32668F01D00D1300A /* Frameworks */,
+				767B7BC42668F01D00D1300A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767B7BC82668F01D00D1300A /* PBXTargetDependency */,
+			);
+			name = WDRacDemoUITests;
+			productName = WDRacDemoUITests;
+			productReference = 767B7BC62668F01D00D1300A /* WDRacDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		767B7B982668F01900D1300A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					767B7B9F2668F01900D1300A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					767B7BBA2668F01D00D1300A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 767B7B9F2668F01900D1300A;
+					};
+					767B7BC52668F01D00D1300A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 767B7B9F2668F01900D1300A;
+					};
+				};
+			};
+			buildConfigurationList = 767B7B9B2668F01900D1300A /* Build configuration list for PBXProject "WDRacDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 767B7B972668F01900D1300A;
+			productRefGroup = 767B7BA12668F01900D1300A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				767B7B9F2668F01900D1300A /* WDRacDemo */,
+				767B7BBA2668F01D00D1300A /* WDRacDemoTests */,
+				767B7BC52668F01D00D1300A /* WDRacDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		767B7B9E2668F01900D1300A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767B7BB32668F01C00D1300A /* LaunchScreen.storyboard in Resources */,
+				767B7BB02668F01C00D1300A /* Assets.xcassets in Resources */,
+				767B7BAE2668F01A00D1300A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767B7BB92668F01D00D1300A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767B7BC42668F01D00D1300A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		767B7B9C2668F01900D1300A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767B7BAB2668F01A00D1300A /* ViewController.m in Sources */,
+				767B7BA52668F01900D1300A /* AppDelegate.m in Sources */,
+				767B7BB62668F01C00D1300A /* main.m in Sources */,
+				767B7BA82668F01900D1300A /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767B7BB72668F01D00D1300A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767B7BC02668F01D00D1300A /* WDRacDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767B7BC22668F01D00D1300A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767B7BCB2668F01D00D1300A /* WDRacDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		767B7BBD2668F01D00D1300A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767B7B9F2668F01900D1300A /* WDRacDemo */;
+			targetProxy = 767B7BBC2668F01D00D1300A /* PBXContainerItemProxy */;
+		};
+		767B7BC82668F01D00D1300A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767B7B9F2668F01900D1300A /* WDRacDemo */;
+			targetProxy = 767B7BC72668F01D00D1300A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		767B7BAC2668F01A00D1300A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767B7BAD2668F01A00D1300A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		767B7BB12668F01C00D1300A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767B7BB22668F01C00D1300A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		767B7BCD2668F01D00D1300A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		767B7BCE2668F01D00D1300A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		767B7BD02668F01D00D1300A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				INFOPLIST_FILE = WDRacDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDRacDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		767B7BD12668F01D00D1300A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				INFOPLIST_FILE = WDRacDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDRacDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		767B7BD32668F01D00D1300A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				INFOPLIST_FILE = WDRacDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDRacDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WDRacDemo.app/WDRacDemo";
+			};
+			name = Debug;
+		};
+		767B7BD42668F01D00D1300A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				INFOPLIST_FILE = WDRacDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDRacDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WDRacDemo.app/WDRacDemo";
+			};
+			name = Release;
+		};
+		767B7BD62668F01D00D1300A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				INFOPLIST_FILE = WDRacDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDRacDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WDRacDemo;
+			};
+			name = Debug;
+		};
+		767B7BD72668F01D00D1300A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				INFOPLIST_FILE = WDRacDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDRacDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WDRacDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		767B7B9B2668F01900D1300A /* Build configuration list for PBXProject "WDRacDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767B7BCD2668F01D00D1300A /* Debug */,
+				767B7BCE2668F01D00D1300A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767B7BCF2668F01D00D1300A /* Build configuration list for PBXNativeTarget "WDRacDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767B7BD02668F01D00D1300A /* Debug */,
+				767B7BD12668F01D00D1300A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767B7BD22668F01D00D1300A /* Build configuration list for PBXNativeTarget "WDRacDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767B7BD32668F01D00D1300A /* Debug */,
+				767B7BD42668F01D00D1300A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767B7BD52668F01D00D1300A /* Build configuration list for PBXNativeTarget "WDRacDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767B7BD62668F01D00D1300A /* Debug */,
+				767B7BD72668F01D00D1300A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 767B7B982668F01900D1300A /* Project object */;
+}
