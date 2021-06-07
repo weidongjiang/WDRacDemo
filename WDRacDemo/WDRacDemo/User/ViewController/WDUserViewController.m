@@ -20,17 +20,26 @@
     [super viewDidLoad];
     
     
-    
-    [self rac_test_interval_delay];
+//    [self rac_test_Notification];
+//    [self rac_test_interval_delay];
 //    [self rac_test_button];
 //    [self rac_test_textField];
     
 }
 
+
+- (void)rac_test_Notification {
+    
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"rac_test_Notification" object:nil] subscribeNext:^(NSNotification * _Nullable x) {
+        NSLog(@"rac_test_Notification :%@",x);
+    }];
+    
+}
+
 - (void)rac_test_interval_delay {
-//    @weakify(self)
+
     self.disposable = [[RACSignal interval:3 onScheduler:[RACScheduler mainThreadScheduler]] subscribeNext:^(NSDate * _Nullable x) {
-//        @strongfiy(self)
+
         NSLog(@"定时器：%@",x);
         
     }];

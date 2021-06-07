@@ -41,6 +41,11 @@
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(80);
     }];
+    
+    // 监听firstView iconButtonDid 方法，代替其他的事件传递方法
+    [[self.firstView rac_signalForSelector:@selector(iconButtonDid:)] subscribeNext:^(RACTuple * _Nullable x) {
+        NSLog(@"rac_signalForSelector iconButtonDid:%@",x);
+    }];
 }
 
 

@@ -43,9 +43,7 @@
         make.height.mas_equalTo(20);
     }];
     
-    [[self.iconButton rac_signalForSelector:@selector(iconButtonDid:)] subscribeNext:^(RACTuple * _Nullable x) {
-        NSLog(@"iconButton rac_signalForSelector:%@",x);
-    }];
+    
 }
 
 - (void)iconButtonDid:(UIButton *)btn {
