@@ -20,6 +20,10 @@
 		76B43409266DFCF70065AA37 /* WDFirstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B43408266DFCF70065AA37 /* WDFirstViewModel.m */; };
 		76B43412266DFD040065AA37 /* WDFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B43411266DFD040065AA37 /* WDFirstModel.m */; };
 		76B43418266DFD160065AA37 /* WDFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B43417266DFD160065AA37 /* WDFirstView.m */; };
+		76B4343B266E0F550065AA37 /* WDUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4343A266E0F550065AA37 /* WDUserViewController.m */; };
+		76B43444266E0F650065AA37 /* WDUserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B43443266E0F650065AA37 /* WDUserViewModel.m */; };
+		76B4344A266E0F730065AA37 /* WDUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B43449266E0F730065AA37 /* WDUserView.m */; };
+		76B43450266E0F810065AA37 /* WDUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4344F266E0F810065AA37 /* WDUserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,14 @@
 		76B43416266DFD160065AA37 /* WDFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDFirstView.h; sourceTree = "<group>"; };
 		76B43417266DFD160065AA37 /* WDFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDFirstView.m; sourceTree = "<group>"; };
 		76B4341D266E01F70065AA37 /* WDRacDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDRacDemo.pch; sourceTree = "<group>"; };
+		76B43439266E0F550065AA37 /* WDUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDUserViewController.h; sourceTree = "<group>"; };
+		76B4343A266E0F550065AA37 /* WDUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDUserViewController.m; sourceTree = "<group>"; };
+		76B43442266E0F650065AA37 /* WDUserViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDUserViewModel.h; sourceTree = "<group>"; };
+		76B43443266E0F650065AA37 /* WDUserViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDUserViewModel.m; sourceTree = "<group>"; };
+		76B43448266E0F730065AA37 /* WDUserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDUserView.h; sourceTree = "<group>"; };
+		76B43449266E0F730065AA37 /* WDUserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDUserView.m; sourceTree = "<group>"; };
+		76B4344E266E0F810065AA37 /* WDUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDUserModel.h; sourceTree = "<group>"; };
+		76B4344F266E0F810065AA37 /* WDUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDUserModel.m; sourceTree = "<group>"; };
 		78EF34A9BBB2DAE16B941766 /* libPods-WDRacDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDRacDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E639A4FA75BDF83E6AB2D564 /* Pods-WDRacDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDRacDemo.release.xcconfig"; path = "Target Support Files/Pods-WDRacDemo/Pods-WDRacDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +141,7 @@
 		767B7BA22668F01900D1300A /* WDRacDemo */ = {
 			isa = PBXGroup;
 			children = (
+				76B43433266E0F010065AA37 /* User */,
 				767B7BA32668F01900D1300A /* AppDelegate.h */,
 				767B7BA42668F01900D1300A /* AppDelegate.m */,
 				767B7BA92668F01A00D1300A /* ViewController.h */,
@@ -207,6 +220,53 @@
 				76B43411266DFD040065AA37 /* WDFirstModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		76B43433266E0F010065AA37 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				76B43437266E0F2A0065AA37 /* ViewController */,
+				76B43436266E0F1F0065AA37 /* ViewModel */,
+				76B43435266E0F170065AA37 /* View */,
+				76B43434266E0F0C0065AA37 /* Model */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		76B43434266E0F0C0065AA37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76B4344E266E0F810065AA37 /* WDUserModel.h */,
+				76B4344F266E0F810065AA37 /* WDUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76B43435266E0F170065AA37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76B43448266E0F730065AA37 /* WDUserView.h */,
+				76B43449266E0F730065AA37 /* WDUserView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76B43436266E0F1F0065AA37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76B43442266E0F650065AA37 /* WDUserViewModel.h */,
+				76B43443266E0F650065AA37 /* WDUserViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		76B43437266E0F2A0065AA37 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				76B43439266E0F550065AA37 /* WDUserViewController.h */,
+				76B4343A266E0F550065AA37 /* WDUserViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		B7312E25CF49E7209B85957F /* Pods */ = {
@@ -393,11 +453,15 @@
 			files = (
 				76B433FC266DFBCE0065AA37 /* WDFirstViewController.m in Sources */,
 				76B43412266DFD040065AA37 /* WDFirstModel.m in Sources */,
+				76B4343B266E0F550065AA37 /* WDUserViewController.m in Sources */,
 				767B7BAB2668F01A00D1300A /* ViewController.m in Sources */,
 				767B7BA52668F01900D1300A /* AppDelegate.m in Sources */,
 				76B43418266DFD160065AA37 /* WDFirstView.m in Sources */,
+				76B4344A266E0F730065AA37 /* WDUserView.m in Sources */,
 				76B43409266DFCF70065AA37 /* WDFirstViewModel.m in Sources */,
 				767B7BB62668F01C00D1300A /* main.m in Sources */,
+				76B43444266E0F650065AA37 /* WDUserViewModel.m in Sources */,
+				76B43450266E0F810065AA37 /* WDUserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

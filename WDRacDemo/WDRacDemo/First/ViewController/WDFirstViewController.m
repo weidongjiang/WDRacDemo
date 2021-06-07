@@ -27,6 +27,7 @@
     [self.viewModel.firstViewiconDidSubject subscribeNext:^(id  _Nullable x) {
         WDFirstModel *model = (WDFirstModel *)x;
         NSLog(@"user id:%@",model.userID);
+        
     }];
     
     
