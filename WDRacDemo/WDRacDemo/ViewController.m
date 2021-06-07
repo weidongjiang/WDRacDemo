@@ -17,10 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.topItemBackView];
-    self.topItemBackView.backgroundColor = [UIColor redColor];
     self.topItemBackView.frame = CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 500);
     
     [self setShareTopViewData];
@@ -37,7 +36,7 @@
         UIButton *plugin = [[UIButton alloc] init];
         [plugin setTitle:[NSString stringWithFormat:@"btn_%d",i] forState:UIControlStateNormal];
         [plugin addTarget:self action:@selector(pluginDid:) forControlEvents:UIControlEventTouchUpInside];
-        [plugin setBackgroundColor:[UIColor blueColor]];
+        [plugin setBackgroundColor:[UIColor greenColor]];
         plugin.tag = i;
         [self.topItemBackView addSubview:plugin];
         NSInteger list_i =  i % listMaxCount; // 列

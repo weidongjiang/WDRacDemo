@@ -65,6 +65,7 @@
 		76B43411266DFD040065AA37 /* WDFirstModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDFirstModel.m; sourceTree = "<group>"; };
 		76B43416266DFD160065AA37 /* WDFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDFirstView.h; sourceTree = "<group>"; };
 		76B43417266DFD160065AA37 /* WDFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDFirstView.m; sourceTree = "<group>"; };
+		76B4341D266E01F70065AA37 /* WDRacDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDRacDemo.pch; sourceTree = "<group>"; };
 		78EF34A9BBB2DAE16B941766 /* libPods-WDRacDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDRacDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E639A4FA75BDF83E6AB2D564 /* Pods-WDRacDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDRacDemo.release.xcconfig"; path = "Target Support Files/Pods-WDRacDemo/Pods-WDRacDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +138,7 @@
 				767B7BB12668F01C00D1300A /* LaunchScreen.storyboard */,
 				767B7BB42668F01C00D1300A /* Info.plist */,
 				767B7BB52668F01C00D1300A /* main.m */,
+				76B4341D266E01F70065AA37 /* WDRacDemo.pch */,
 				76B433F9266DFBAC0065AA37 /* First */,
 			);
 			path = WDRacDemo;
@@ -570,6 +572,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WDRacDemo/WDRacDemo.pch";
 				INFOPLIST_FILE = WDRacDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,6 +593,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WDRacDemo/WDRacDemo.pch";
 				INFOPLIST_FILE = WDRacDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
