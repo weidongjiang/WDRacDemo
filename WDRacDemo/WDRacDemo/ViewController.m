@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "WDFirstViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) UIView    *topItemBackView;
@@ -55,6 +56,8 @@
     switch (btn.tag) {
         case 0:
         {
+            WDFirstViewController *vc = [[WDFirstViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 1:
