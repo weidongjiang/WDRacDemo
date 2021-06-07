@@ -9,7 +9,7 @@
 
 @interface WDFirstView ()
 
-@property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UIButton *iconButton;
 @property (nonatomic, strong) UILabel *nameLabel;
 
 @end
@@ -25,9 +25,10 @@
 
 - (void)initSubViews {
     
-    self.iconImageView = [[UIImageView alloc] init];
-    [self addSubview:self.iconImageView];
-    [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.iconButton = [[UIButton alloc] init];
+    [self.iconButton addTarget:self action:@selector(iconButtonDid:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:self.iconButton];
+    [self.iconButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.equalTo(self);
         make.width.height.mas_equalTo(50);
     }];
@@ -38,12 +39,15 @@
     [self addSubview:self.nameLabel];
     [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self);
-        make.top.equalTo(self.iconImageView.mas_bottom).offset(10);
+        make.top.equalTo(self.iconButton.mas_bottom).offset(10);
         make.height.mas_equalTo(20);
     }];
     
 }
 
+- (void)iconButtonDid:(UIButton *)btn {
+    [self.viewModel.firstViewiconDidSubject  sendNext:self.viewModel.model];
+}
 
 - (void)setViewModel:(WDFirstViewModel *)viewModel {
     _viewModel = viewModel;
@@ -52,9 +56,12 @@
     [viewModel.racCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         WDFirstModel *model = (WDFirstModel *)x;
         weakSelf.nameLabel.text = model.name;
-        [weakSelf.iconImageView sd_setImageWithURL:[NSURL URLWithString:model.iconUrlString] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-                    
-        }];
+        ;
+        [weakSelf.iconButton setBackgroundImage:[UIImage sd_imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:model.iconUrlString]]] forState:UIControlStateNormal];
+    }];
+    
+    [viewModel.viewDidLoadSubject subscribeNext:^(id  _Nullable x) {
+        NSLog(@"viewDidLoad Subject");
     }];
     
 }

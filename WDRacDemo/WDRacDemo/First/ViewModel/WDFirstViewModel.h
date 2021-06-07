@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) RACSubject *viewDidLoadSubject;///<view Controller 的生命周期
 
+@property (nonatomic, strong) RACSubject *firstViewiconDidSubject;///< 点击事件
+
 
 @end
 

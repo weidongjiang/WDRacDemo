@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WDFirstModel : NSObject
 
+@property (nonatomic, copy) NSString *userID;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *iconUrlString;
 

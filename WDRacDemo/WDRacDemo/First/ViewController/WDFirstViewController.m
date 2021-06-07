@@ -24,6 +24,11 @@
     self.view.backgroundColor = [UIColor greenColor];
     
     [self.viewModel.viewDidLoadSubject sendNext:@"viewDidLoad"];
+    [self.viewModel.firstViewiconDidSubject subscribeNext:^(id  _Nullable x) {
+        WDFirstModel *model = (WDFirstModel *)x;
+        NSLog(@"user id:%@",model.userID);
+    }];
+    
     
     [self.view addSubview:self.firstView];
     self.firstView.viewModel = self.viewModel;
