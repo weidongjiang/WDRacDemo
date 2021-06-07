@@ -9,6 +9,14 @@
 #define WDRacDemo_pch
 
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <Masonry/Masonry.h>
+#import <SDWebImage/SDWebImage.h>
 
+
+#pragma mark - weakSelf
+#define kWeakSelf __weak typeof(self) weakSelf = self;
+#define kStrongSelf(type) __strong typeof(type) type = weak##type;
+#define KScreenHeight               [UIScreen mainScreen].bounds.size.height
+#define KScreenWidth                [UIScreen mainScreen].bounds.size.width
 
 #endif /* WDRacDemo_pch */
