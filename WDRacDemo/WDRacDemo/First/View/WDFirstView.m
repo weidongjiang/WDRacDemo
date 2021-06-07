@@ -43,6 +43,9 @@
         make.height.mas_equalTo(20);
     }];
     
+    [[self.iconButton rac_signalForSelector:@selector(iconButtonDid:)] subscribeNext:^(RACTuple * _Nullable x) {
+        NSLog(@"iconButton rac_signalForSelector:%@",x);
+    }];
 }
 
 - (void)iconButtonDid:(UIButton *)btn {
@@ -64,5 +67,16 @@
         NSLog(@"viewDidLoad Subject");
     }];
     
+    [viewModel.racCommand.executionSignals subscribeNext:^(id  _Nullable x) {
+        NSLog(@"executionSignals ---- :%@",x);
+    }];
+    [viewModel.racCommand.executing subscribeNext:^(NSNumber * _Nullable x) {
+        NSLog(@"executing ---- :%@",x);
+
+    }];
+    [viewModel.racCommand.errors subscribeNext:^(NSError * _Nullable x) {
+        NSLog(@"errors ---- :%@",x);
+
+    }];
 }
 @end

@@ -8,6 +8,7 @@
 #import "WDFirstViewController.h"
 #import "WDFirstViewModel.h"
 #import "WDFirstView.h"
+#import "WDUserViewController.h"
 
 @interface WDFirstViewController ()
 
@@ -22,12 +23,13 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor greenColor];
-    
+    kWeakSelf
     [self.viewModel.viewDidLoadSubject sendNext:@"viewDidLoad"];
     [self.viewModel.firstViewiconDidSubject subscribeNext:^(id  _Nullable x) {
         WDFirstModel *model = (WDFirstModel *)x;
         NSLog(@"user id:%@",model.userID);
-        
+        WDUserViewController *vc = [[WDUserViewController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     
     
@@ -46,6 +48,8 @@
     [super viewWillAppear:animated];
     
     [self.viewModel.racCommand execute:@"viewWillAppear"];
+    
+    
     
 }
 
